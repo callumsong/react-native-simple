@@ -1,5 +1,7 @@
 This project was bootstrapped with [Create React Native App](https://github.com/react-community/create-react-native-app).
 
+This was created using Node v10.5.0, npm v6.1.0 and yarn v1.7.0
+
 To install all dependencies, run `npm install`
 
 ### `npm start`
