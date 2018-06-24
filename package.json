@@ -3,9 +3,21 @@
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
-    "react-native-scripts": "1.14.0",
+    "babel-eslint": "^8.2.5",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "enzyme-to-json": "^3.3.4",
+    "eslint": "^5.0.0",
+    "eslint-config-airbnb": "^17.0.0",
+    "eslint-plugin-import": "^2.12.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.9.1",
     "jest-expo": "~27.0.0",
-    "react-test-renderer": "16.3.1"
+    "jest-serializer-enzyme": "^1.0.0",
+    "react-addons-test-utils": "^15.6.2",
+    "react-dom": "^16.4.1",
+    "react-native-scripts": "1.14.0",
+    "react-test-renderer": "^16.4.1"
   },
   "main": "./node_modules/react-native-scripts/build/bin/crna-entry.js",
   "scripts": {
@@ -16,7 +28,10 @@
     "test": "jest"
   },
   "jest": {
-    "preset": "jest-expo"
+    "preset": "jest-expo",
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ]
   },
   "dependencies": {
     "expo": "^27.0.1",
